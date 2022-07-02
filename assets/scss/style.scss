@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --clr: #F2F2F2;
+}
+body{
+    min-height: 100vh;
+    background: var(--clr);
+}
+.navbar{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background: #261514;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 10px;
+    ul{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 350px;
+        padding-left: 9px;
+        li{
+            position: relative;
+            list-style: none;
+            width: 50px;
+            height: 50px;
+            z-index: 1;
+            &:hover a .text{
+                color: rgba(242, 242, 242, 1);
+                transform: translateY(10px);
+                text-decoration: 2px overline #73513D;
+            }
+            &:hover a .icon{
+                transform: translateY(-15px);
+            }
+            a{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                font-weight: 500;
+                .icon{
+                    position: relative;
+                    display: block;
+                    line-height: 75px;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    transition: all 500ms;
+                    color: var(--clr);
+                }
+                .text{
+                    position: absolute;
+                    color: rgba(242, 242, 242, 0.0);
+                    font-weight: 400;
+                    font-size: 0.75em;
+                    letter-spacing: 0.05em;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+}
+.main{
+    color: #0D0D0D;
+}
+.header{
+    background-color: #261514;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 100;
+    /*border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;*/
+    box-shadow: 0px 17px 52px 3px #F2F1F0;
+    .icono{
+        position: relative;
+        display: block;
+        line-height: 75px;
+        font-size: 2rem;
+        text-align: center;
+        transition: all 500ms;
+        color: var(--clr);
+        margin-right: 20px;
+    }
+    h1{
+        font-size: 30px;
+        font-weight: 400;
+        color: var(--clr);
+    }
+}
+.relleno {
+    height: 80px;
+}
+.tapa {
+    background-color: #73513D;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    border-radius: 10px;
+}
+
+//-------------------------------------------
+.bgIndex{
+    /*background-image: url(../assets/img/hand-off.jpg);
+    background-position: 30% 20%;
+    height: 30rem;*/
+    background-image: url(../img/luces.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 2000px;
+    height: 20rem;
+    
+}
+.bgFooter{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%2373513d' fill-opacity='1' d='M0 192L120 176C240 160 480 128 720 133.3C960 139 1200 181 1320 202.7L1440 224L1440 0L1320 0C1200 0 960 0 720 0C480 0 240 0 120 0L0 0Z'%3E%3C/path%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+//------------------------------------------
+.divContacto{
+    margin-bottom: 2rem;
+    color: #0D0D0D;
+    h4{
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        font-size: 2rem;
+        padding-top: 30px;
+        color: black;
+    }
+    .telefonoCorreo{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        color: black;
+        p{
+            text-align: center;
+            color: #0D0D0D;
+        }
+    }
+    .divRedes{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-top: 5px;
+        color: black;
+    }
+    .redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+        margin-bottom: 2rem;
+        color: black;
+        img{
+            margin-right: 7px;
+            margin-left: 7px;
+        }
+    }
+    .mapa{
+        display: flex;
+        justify-content: center;
+        .mapaBorde{
+            border-radius: 10px;
+            width: 500px;
+            height: 400px;
+        }
+    }
+}
+main{
+    color: #0D0D0D;
+    div{
+        h2{
+            display: flex;
+            justify-content: center;
+            padding-left: 10px;
+            padding-top: 20px;
+            padding-right: 10px;
+        }
+        p{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+}
+
+@media all and (min-width: 700px){
+    main div p{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+
+
+
+
+//remeras
+.mainRem{
+    .tituloRem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        h2{
+            color: #0D0D0D;
+        }
+    }
+    .contRem{
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 4;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr))
+    }
+    .cardRem{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .imgRem{
+            height: 60vh;
+        }
+        .descripRem{
+            margin-top: 5px;
+        }
+    }
+}
+
+#bodyRem{
+    .rellenoRem{
+        height: 10rem;
+    }
+}
+
+
+
+//Buzos
+.mainBuzos{
+    .tituloRem{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        h2{
+            color: #0D0D0D;
+        }
+    }
+    .contRem{
+        display: grid;
+        gap: 1rem;
+        grid-auto-rows: 4;
+        grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr))
+    }
+    .cardRem{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .imgRem{
+            height: 60vh;
+        }
+        .descripRem{
+            margin-top: 5px;
+        }
+    }
+}
+#bodyBuzos{
+    .rellenoBuzos{
+        height: 10rem;
+    }
+}
